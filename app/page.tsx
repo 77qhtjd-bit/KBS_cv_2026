@@ -1,65 +1,90 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-white text-zinc-900">
+      <div className="mx-auto max-w-3xl px-6 py-14">
+        {/* Header */}
+        <header className="space-y-3">
+          <h1 className="text-4xl font-bold tracking-tight">김보성</h1>
+          <p className="text-lg text-zinc-600">
+            Mechanical Engineering & Physics | Research / Robotics / EdTech
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <a className="underline underline-offset-4" href="mailto:your@email.com">
+              your@email.com
+            </a>
+            <a className="underline underline-offset-4" href="https://github.com/yourname" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a className="underline underline-offset-4" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </header>
+
+        {/* About */}
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold">About</h2>
+          <p className="mt-3 leading-7 text-zinc-700">
+            여기에 4~6줄 소개를 적으면 돼. (전공, 관심 분야, 하고 싶은 연구/개발, 강점)
+          </p>
+        </section>
+
+        {/* Experience */}
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold">Experience</h2>
+          <div className="mt-4 space-y-4">
+            <div className="rounded-xl border p-4">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <p className="font-medium">UROP Intern · 에너지환경유동연구실</p>
+                <p className="text-sm text-zinc-500">2025.07 – 2025.11</p>
+              </div>
+              <ul className="mt-2 list-disc pl-5 text-zinc-700">
+                <li>MRV/PIV 데이터 분석, 유동 특성 지표 설계</li>
+                <li>실험/코드 파이프라인 정리 및 결과 시각화</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold">Projects</h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <a className="rounded-xl border p-4 hover:bg-zinc-50" href="#">
+              <p className="font-medium">Running Journal App</p>
+              <p className="mt-1 text-sm text-zinc-600">
+                Flutter 기반 러닝 다이어리 앱. 기록/편집/일지 기능.
+              </p>
+              <p className="mt-3 text-xs text-zinc-500">Flutter · Supabase</p>
+            </a>
+
+            <a className="rounded-xl border p-4 hover:bg-zinc-50" href="#">
+              <p className="font-medium">ESP32-CAM Line Tracer</p>
+              <p className="mt-1 text-sm text-zinc-600">
+                OpenCV 기반 라인 추적 + 제어 신호 전송.
+              </p>
+              <p className="mt-3 text-xs text-zinc-500">ESP32 · OpenCV · Python</p>
+            </a>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold">Skills</h2>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {["Python", "MATLAB", "Arduino", "C/C++", "Flutter", "Git"].map((s) => (
+              <span key={s} className="rounded-full border px-3 py-1 text-sm text-zinc-700">
+                {s}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="mt-14 border-t pt-6 text-sm text-zinc-500">
+          © {new Date().getFullYear()} 김보성 · Built with Next.js
+        </footer>
+      </div>
+    </main>
   );
 }
