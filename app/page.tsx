@@ -6,16 +6,16 @@ export default function Home() {
         <header className="space-y-3">
           <h1 className="text-4xl font-bold tracking-tight">김보성</h1>
           <p className="text-lg text-zinc-600">
-            Mechanical Engineering & Physics | Research / Robotics / EdTech
+            Mechanical Engineering & Physics | Interest : Wearable, dexterity device / EdTech
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
-            <a className="underline underline-offset-4" href="mailto:your@email.com">
+            <a className="underline underline-offset-4" href="mailto:77qhtjd@snu.ac.kr">
               your@email.com
             </a>
             <a className="underline underline-offset-4" href="https://github.com/yourname" target="_blank" rel="noreferrer">
               GitHub
             </a>
-            <a className="underline underline-offset-4" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noreferrer">
+            <a className="underline underline-offset-4" href="www.linkedin.com/in/bosung-kim-816a77377" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </div>
@@ -25,7 +25,21 @@ export default function Home() {
         <section className="mt-12">
           <h2 className="text-xl font-semibold">About</h2>
           <p className="mt-3 leading-7 text-zinc-700">
-            여기에 4~6줄 소개를 적으면 돼. (전공, 관심 분야, 하고 싶은 연구/개발, 강점)
+            I am a **third-year student** at **Seoul National University**, majoring in **Physics Education** with a double major in **Mechanical Engineering**.
+
+            My academic interests lie in **Swarm Robot** mechanisms with flow physics and **sports engineering**. Specifically, I focus on **emergent behaviors**, and the development of **sports technologies** such as assistive machines and data measurement tools.
+
+            Currently, I am a student intern at the SNU Energy & Environmental Flow Lab(EEFL), where I research fluid dynamics and heat transfer, exploring ways to combine jet cooling. In addition, I have pursued side projects, including:
+
+            -Developing a running data recording and customization app
+
+            -Designing a haptic guidance device (vibration-based direction aid) for visually impaired runners
+
+            Beyond applied engineering, I am deeply interested in pure physics and fundamental mathematics, as I believe these subjects cultivate rigorous thinking and inspire innovative applications in engineering and technology.
+
+            At the same time, I am actively involved in entrepreneurship activities with SNUSV, a startup club at SNU, while building hands-on research experience.
+
+            Feel free to connect or message me if you’d like to discuss research, technology, or new ideas!
           </p>
         </section>
 
