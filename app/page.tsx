@@ -10,7 +10,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <a className="underline underline-offset-4" href="mailto:77qhtjd@snu.ac.kr">
-              your@email.com
+              77qhtjd@snu.ac.kr
             </a>
             <a className="underline underline-offset-4" href="https://github.com/yourname" target="_blank" rel="noreferrer">
               GitHub
