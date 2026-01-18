@@ -56,7 +56,7 @@ export interface CVData {
 export const cv: CVData = {
   profile: {
     name: "Kim Bo-Sung",
-    headline: "Mechanical Engineering & Physics | Wearable, Dexterity Device / EdTech",
+    headline: "Physics & Mechanical Engineering | Wearable, Dexterity Device / EdTech",
     location: "Seoul, South Korea",
     email: "77qhtjd@snu.ac.kr",
     phone: undefined,
