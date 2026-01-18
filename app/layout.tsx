@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "김보성 | CV",
   description:
-    "김보성의 CV/Portfolio — Mechanical Engineering & Physics, Research, Robotics, EdTech.",
+    "김보성의 CV/Portfolio — Mechanical Engineering & Physics, Research / Robotics / EdTech",
   metadataBase: new URL("https://kbs-cv-2026.vercel.app"),
   openGraph: {
     title: "김보성 | CV",
@@ -29,10 +29,6 @@ export const metadata: Metadata = {
     description:
       "Mechanical Engineering & Physics — Research / Robotics / EdTech",
     images: ["/og.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
