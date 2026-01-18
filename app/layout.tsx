@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "김보성 | CV",
     description:
-      "Mechanical Engineering & Physics — Research / Robotics / EdTech",
+      "Physics & Mechanical Engineering — Research / Robotics / EdTech",
     images: ["/og.png"],
   },
   robots: {
